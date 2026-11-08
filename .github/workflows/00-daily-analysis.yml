@@ -572,7 +572,7 @@ jobs:
       - name: 保存报告到仓库供仪表盘读取
         if: always()
         continue-on-error: true
-                run: |
+          run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f reports/
